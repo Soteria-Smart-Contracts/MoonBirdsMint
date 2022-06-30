@@ -1,7 +1,7 @@
 let account;
 const ABI = window.abi;
 let netID;
-const contractAddress = "0x5925630e4D0AB569A40E600064Da2930b4838Da3";
+const contractAddress = "0x2001D679210C0e4531f5C07155d8e3677Dd388ae";
 
 loginWithEth();
 
