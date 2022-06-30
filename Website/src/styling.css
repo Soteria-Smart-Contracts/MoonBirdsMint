@@ -156,7 +156,7 @@ h3{
 
 @media (pointer:none), (pointer:coarse) {
     .logo{
-        width: 40vh;
+        display: none;
 
     }
     .generaldiv{
