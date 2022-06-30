@@ -15,6 +15,26 @@ window.abi =[
 				"internalType": "string",
 				"name": "_initBaseURI",
 				"type": "string"
+			},
+			{
+				"internalType": "address payable",
+				"name": "_1",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_1payout",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address payable",
+				"name": "_2",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_2payout",
+				"type": "uint256"
 			}
 		],
 		"stateMutability": "nonpayable",
