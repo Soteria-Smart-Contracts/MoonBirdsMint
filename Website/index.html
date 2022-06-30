@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styling.css">
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.1/web3.min.js"
+    integrity="sha512-5erpERW8MxcHDF7Xea9eBQPiRtxbse70pFcaHJuOhdEBQeAxGQjUwgJbuBDWve+xP/u5IoJbKjyJk50qCnMD7A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+    </script>
+    <title>ETC Moon Birds</title>
+</head>
+<body>
+    <img class="logo" src="src/images/birdlogo.png"></img>
+    <h1></h1>
+
+ <div class="center">
+    <div class="generaldiv">
+        <h1>ETC Moonbirds Minting</h1>
+        <h2>Minted: <a id="supply">0</a>/10000 | Price: 2 ETC</h2>
+        <br>
+
+            <div class="mintdiv">
+                <input id="amount" max="20" placeholder="Amount To Mint" pattern=" 0+\.[0-9]*[1-9][0-9]*$" onkeypress="return event.charCode >= 48 && event.charCode <= 57" min="0" step="1" class="input" type="number"></input>
+                <br>
+                <a onclick="mint()" class="smallbutton mint">Mint</a>
+            </div>
+            <a class="conlink" href="https://blockscout.com/etc/mainnet/address/0x5925630e4D0AB569A40E600064Da2930b4838Da3/contracts#address-tabs" target="_blank">Contract On Blockscout</a>
+    </div>
+ </div>
+<br></br>
+<br></br>
+ <h4>Please ensure you are connected to the Ethereum Classic Network in order to avoid a loss of funds</h4>
+ <h4>Thank you for minting, we appreciate your help in growing this project!</h4>
+</body>
+<script src="src/abi.js"></script>
+<script src="src/functionality.js"></script>
+</html>

@@ -1,0 +1,182 @@
+body{
+    background-image: url("images/bg.png");
+    display: block;
+    height: fit-content;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #144c80;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+h1{
+    font-family: Arial;
+    color: white;
+    font-weight: bolder;
+    -webkit-text-stroke: 2px #15154c;
+}
+
+h4{
+    font-family: Arial;
+    font-size: large;
+    color: white;
+}
+
+h2{
+    font-family: Arial;
+    color: white;
+    font-size: 30px;
+    margin: 2vh;
+    margin-bottom: 1vh;
+    -webkit-text-stroke: 2px #15154c;
+}
+
+h3{
+    font-family: Arial;
+    color: white;
+    font-size: 30px;
+    margin: 0 auto;
+    margin-bottom: 3vh;
+    margin-top: 1.8vh;
+}
+
+.smallbutton{
+    background-color: #12658f;
+    border: none;
+    font-family: Arial;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2vh 1vw;
+    cursor: pointer;
+    border: #d6ceab solid 2px;
+    border-radius: 10px;
+    margin-bottom: 1vh;
+}
+
+.smallbutton.mint{
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bolder;
+    width: 8vw;
+}
+
+.logo{
+    width: 8vw;
+    height: 16vh;
+    padding-top: 1vh;
+    position: relative;
+    align-self: center;
+    border-radius: 30px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+.conlink{
+    font-family: Arial;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.generaldiv{
+    display: inline-block;
+    width: 40vw;
+    margin: 0 auto;
+    height: max-content;
+    text-align: center;
+    padding: 2vh;
+    margin-top: 5vh;
+    position: relative;
+    align-self: center;
+    background-color: #12658f;
+    border: solid 3px #15154c;
+    border-radius: 20px;
+    padding-bottom: 2%;
+}
+
+.mintdiv{
+    height: 18vh;
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    padding: 2vh;
+    padding-top: 6vh;
+    margin-top: 2vh;
+    position: relative;
+    align-self: center;
+    background-color: #15154c;
+    border-radius: 20px;
+    margin-bottom: 2vh;
+
+}
+
+.center{
+    display: inline-block;
+    text-align: left;
+}
+
+.input{
+    font-size: larger;
+    text-align: center;
+    width: 12vw;
+    color: white;
+    height: 4vh;
+    border-radius: 30px;
+    border: solid 2px #d6ceab;
+    background-color: #12658f;
+    padding-left: 1vw;
+    margin-bottom: 2vh;
+}
+
+
+.gifs{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 17vh;
+    border-radius: 150px;
+    height: max-content;
+    width: max-content;
+    padding: 2vh;
+    margin-right: 8vh;
+    margin-left: 8vh;
+    border: #3aeb1b solid 5px;
+    background-color: black;
+}
+
+.gif{
+    height: 30vh;
+    border-radius: 100px;
+}
+
+@media (pointer:none), (pointer:coarse) {
+    .logo{
+        width: 40vh;
+
+    }
+    .generaldiv{
+        width: 80vw;
+        padding-bottom: 3vh;
+        margin-top: 2vh;
+    }
+
+    .input{
+        width: 50vw;
+    }
+
+    .smallbutton.mint{
+        width: 20vw;
+    }
+    .mintdiv{
+        padding-bottom: 5vh;
+    }
+
+    .gifs{
+        display: none;
+    }
+}
