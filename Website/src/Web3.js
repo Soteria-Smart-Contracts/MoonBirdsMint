@@ -1,10 +1,10 @@
 let account;
 const ABI = window.abi;
+let ids;
 let netID;
 const contractAddress = "0x2001D679210C0e4531f5C07155d8e3677Dd388ae";
 
 loginWithEth();
-
 
 async function loginWithEth(){
     if(window.ethereum){
@@ -18,9 +18,11 @@ async function loginWithEth(){
             return("Failed to connect")
         }
         accountarray = await web3.eth.getAccounts();
-        contract = new window.web3.eth.Contract(ABI, contractAddress, window.web3);
+        contract = await new window.web3.eth.Contract(ABI, contractAddress, window.web3);
         account = accountarray[0];
         getsupply();
+        await ReturnIds();
+        LoadNFTs();
     } else { 
         alert("No ETHER Wallet available")
     }
@@ -44,4 +46,10 @@ async function mint(){
     let tx = await contract.methods.mint(amount).send({from: account, value: amountWei, gas: 3000000});
     console.log(tx);
     return(tx);
+}
+
+async function ReturnIds(){
+    ids = await contract.methods.walletOfOwner(account).call();
+    console.log(ids);
+    return(ids);
 }
