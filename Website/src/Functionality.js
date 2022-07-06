@@ -3,7 +3,7 @@ SwitchPage("mint");
 
 function ShowCollection(){
     let index = 0;
-    while(index < ids.length){
+    while(index < 100){
         newcard = document.createElement("div");
         newcard.className = "NFTcard";
         newcard.id = index;
