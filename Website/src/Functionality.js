@@ -12,6 +12,7 @@ function SwitchPage(page) {
     }
     if(page == "wallet"){
         document.getElementById("minting").style.display = "none";
+        document.getElementById("collection").style.display = "none";
         document.getElementById("wallet").style.display = "block";
     }
     if(page == "collection"){
