@@ -1,5 +1,5 @@
 SwitchPage("mint");
-
+let collection
 
 function ShowCollection(){
     let index = 1;
