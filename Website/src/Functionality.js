@@ -6,12 +6,12 @@ SwitchPage("mint");
 
 function SwitchPage(page) {
     if(page == "mint"){
-    document.getElementById("wallet").style.display = "none";
-    document.getElementById("minting").style.display = "block";
+        document.getElementById("wallet").style.display = "none";
+        document.getElementById("minting").style.display = "block";
     }
     if(page == "wallet"){
-    document.getElementById("minting").style.display = "none";
-    document.getElementById("wallet").style.display = "block";
+        document.getElementById("minting").style.display = "none";
+        document.getElementById("wallet").style.display = "block";
     }
     if(page == "collection"){
         document.getElementById("minting").style.display = "none";
