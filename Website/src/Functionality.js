@@ -1,8 +1,8 @@
 SwitchPage("mint");
-let collection
+let CollectionNum = 1;
 
 function ShowCollection(){
-    let index = 1;
+    let index = CollectionNum;
     while(index < 101){
         newcard = document.createElement("div");
         newcard.className = "NFTcard";
