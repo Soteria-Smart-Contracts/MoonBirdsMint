@@ -1,6 +1,7 @@
 SwitchPage("mint");
 
 
+function Show
 
 
 function SwitchPage(page) {
