@@ -13,6 +13,10 @@ function SwitchPage(page) {
     document.getElementById("minting").style.display = "none";
     document.getElementById("wallet").style.display = "block";
     }
+    if(page == "collection"){
+        document.getElementById("minting").style.display = "none";
+        document.getElementById("wallet").style.display = "block";
+    }
 
 }
 
