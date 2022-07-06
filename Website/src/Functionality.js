@@ -13,6 +13,7 @@ function ShowCollection(){
         document.getElementById("CollectionContainer").appendChild(newcard);
         index++;
     }
+    CollectionNum = index;
 }
 
 
