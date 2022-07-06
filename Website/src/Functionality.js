@@ -15,7 +15,8 @@ function SwitchPage(page) {
     }
     if(page == "collection"){
         document.getElementById("minting").style.display = "none";
-        document.getElementById("wallet").style.display = "block";
+        document.getElementById("wallet").style.display = "none";
+        document.getElementById("collection").style.display = "block";
     }
 
 }
