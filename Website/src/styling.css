@@ -252,7 +252,7 @@ h3{
         height: 30vh;
     }
 
-    .WalletHeader{
+    .DisplayHeader{
         font-family: Arial;
         font-size: 4vh;
         color: white;
@@ -266,7 +266,7 @@ h3{
         height: 40vh;
     }
 
-    .WalletContainer{
+    .NFTContainer{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
