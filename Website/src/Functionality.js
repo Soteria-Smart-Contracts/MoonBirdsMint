@@ -28,10 +28,10 @@ function SwitchPage(page) {
         document.getElementById("wallet").style.display = "block";
     }
     if(page == "collection"){
+        ShowCollection();
         document.getElementById("minting").style.display = "none";
         document.getElementById("wallet").style.display = "none";
         document.getElementById("collection").style.display = "block";
-        ShowCollection();
     }
 
 }
