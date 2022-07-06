@@ -1,7 +1,7 @@
 SwitchPage("mint");
 
 
-function Show
+//function ShowCollection
 
 
 function SwitchPage(page) {
