@@ -7,7 +7,7 @@ SwitchPage("mint");
 function SwitchPage(page) {
     if(page == "mint"){
         document.getElementById("wallet").style.display = "none";
-        do
+        document.getElementById("collection").style.display = "none";
         document.getElementById("minting").style.display = "block";
     }
     if(page == "wallet"){
