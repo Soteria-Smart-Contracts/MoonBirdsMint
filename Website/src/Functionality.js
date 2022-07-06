@@ -3,7 +3,7 @@ let CollectionNum = 1;
 
 function ShowCollection(){
     let index = CollectionNum;
-    while(index < CollectionNum+100){
+    while(index < (CollectionNum + 100)){
         newcard = document.createElement("div");
         newcard.className = "NFTcard";
         newcard.id = index;
