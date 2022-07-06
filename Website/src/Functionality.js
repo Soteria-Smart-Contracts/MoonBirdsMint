@@ -1,18 +1,55 @@
 SwitchPage("mint");
-let CollectionNum = 1;
+let CollectionNum = 10000;
+let updown;
+
+function setUpdown(direction){
+    document.getElementById("CollectionContainer").innerHTML = "";
+    if (direction == "up"){
+        CollectionNum = 1;
+        updown = "up";
+    }
+    if (direction == "down"){
+        CollectionNum = 10000;
+        updown = "down";
+    }
+    ShowCollection();
+}
 
 function ShowCollection(){
     let index = CollectionNum;
-    while(index < (CollectionNum + 100)){
-        newcard = document.createElement("div");
-        newcard.className = "NFTcard";
-        newcard.id = index;
-        let img = '<img class="nftimage" src="src/images/collection/' + index + '.png"></img>"';
-        let BlockscoutLink = 'https://blockscout.com/etc/mainnet/token/0x2001d679210c0e4531f5c07155d8e3677dd388ae/instance/' + index +  '/token-transfers';
-        newcard.innerHTML = img + '<a class="nftID head">MoonBird ID:</a>' + '<br>' + '<a class="nftID">' + index + '</a>' + '<br>' + '<a class="nftID scout" href="' + BlockscoutLink + '" target="_blank">View On Blockscout</a>';
-        document.getElementById("CollectionContainer").appendChild(newcard);
-        index++;
+
+    if (updown == "down"){
+        while(index > (CollectionNum - 100)){
+            if (index < 1 || index > 10000){
+                break;
+            }
+            newcard = document.createElement("div");
+            newcard.className = "NFTcard";
+            newcard.id = index;
+            let img = '<img class="nftimage" src="src/images/collection/' + index + '.png"></img>"';
+            let BlockscoutLink = 'https://blockscout.com/etc/mainnet/token/0x2001d679210c0e4531f5c07155d8e3677dd388ae/instance/' + index +  '/token-transfers';
+            newcard.innerHTML = img + '<a class="nftID head">MoonBird ID:</a>' + '<br>' + '<a class="nftID">' + index + '</a>' + '<br>' + '<a class="nftID scout" href="' + BlockscoutLink + '" target="_blank">View On Blockscout</a>';
+            document.getElementById("CollectionContainer").appendChild(newcard);
+            index--;
+        }
     }
+
+    if (updown == "up"){
+        while(index < (CollectionNum + 100)){
+            if (index < 1 || index > 10000){
+                break;
+            }
+            newcard = document.createElement("div");
+            newcard.className = "NFTcard";
+            newcard.id = index;
+            let img = '<img class="nftimage" src="src/images/collection/' + index + '.png"></img>"';
+            let BlockscoutLink = 'https://blockscout.com/etc/mainnet/token/0x2001d679210c0e4531f5c07155d8e3677dd388ae/instance/' + index +  '/token-transfers';
+            newcard.innerHTML = img + '<a class="nftID head">MoonBird ID:</a>' + '<br>' + '<a class="nftID">' + index + '</a>' + '<br>' + '<a class="nftID scout" href="' + BlockscoutLink + '" target="_blank">View On Blockscout</a>';
+            document.getElementById("CollectionContainer").appendChild(newcard);
+            index++;
+        }
+    }
+
     CollectionNum = index;
 }
 
@@ -29,7 +66,6 @@ function SwitchPage(page) {
         document.getElementById("wallet").style.display = "block";
     }
     if(page == "collection"){
-        ShowCollection();
         document.getElementById("minting").style.display = "none";
         document.getElementById("wallet").style.display = "none";
         document.getElementById("collection").style.display = "block";
