@@ -10,7 +10,7 @@ function ShowCollection(){
         let img = '<img class="nftimage" src="src/images/collection/' + index + '.png"></img>"';
         let BlockscoutLink = 'https://blockscout.com/etc/mainnet/token/0x2001d679210c0e4531f5c07155d8e3677dd388ae/instance/' + index +  '/token-transfers';
         newcard.innerHTML = img + '<a class="nftID head">MoonBird ID:</a>' + '<br>' + '<a class="nftID">' + index + '</a>' + '<br>' + '<a class="nftID scout" href="' + BlockscoutLink + '" target="_blank">View On Blockscout</a>';
-        document.getElementById("WalletContainer").appendChild(newcard);
+        document.getElementById("CollectionContainer").appendChild(newcard);
         index++;
     }
 }
