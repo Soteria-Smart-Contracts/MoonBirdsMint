@@ -197,7 +197,7 @@ h3{
     border-radius: 100px;
 }
 
-.WalletContainer{
+.NFTContainer{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
