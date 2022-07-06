@@ -31,6 +31,7 @@ function SwitchPage(page) {
         document.getElementById("minting").style.display = "none";
         document.getElementById("wallet").style.display = "none";
         document.getElementById("collection").style.display = "block";
+        ShowCollection();
     }
 
 }
