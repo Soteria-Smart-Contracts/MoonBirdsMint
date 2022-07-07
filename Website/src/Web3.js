@@ -56,7 +56,7 @@ async function mint(){
         txfailed = true;
         return;
     });
-    if(txfailed = true){
+    if(txfailed == true){
         return;
     }
     document.getElementById("txviewer").textContent = "Transaction Complete";
