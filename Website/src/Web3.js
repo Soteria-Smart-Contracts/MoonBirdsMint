@@ -52,6 +52,7 @@ async function mint(){
         console.log("Transaction failed");
         alert("Failed to mint");
         document.getElementById("txviewer").style.display = "none";
+        
         return;
     });
     document.getElementById("txviewer").textContent = "Transaction Complete";
