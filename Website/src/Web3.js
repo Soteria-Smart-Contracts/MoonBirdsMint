@@ -43,6 +43,9 @@ async function getID(){
 async function mint(){
     let amount = document.getElementById("amount").value;
     let txfailed = false;
+    document.getElementById("txviewer").textContent = "Transaction Complete";
+    document.getElementById("txviewer").target = "_blank";
+    document.getElementById("txviewer").href = "https://blockscout.com/etc/mainnet/tx/" + tx.transactionHash;
     if(amount < 1){ 
         alert("Please enter a valid amount");
         return;
