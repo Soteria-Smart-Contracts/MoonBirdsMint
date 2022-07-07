@@ -24,6 +24,12 @@ h4{
     color: white;
 }
 
+.txviewer{
+    font-family: Arial;
+    font-size: large;
+    color: white;
+}
+
 .display{
     margin-top: 25vh;
     text-align: left;
