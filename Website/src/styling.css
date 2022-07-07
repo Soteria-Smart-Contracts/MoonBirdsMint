@@ -185,6 +185,10 @@ h3{
     text-align: left;
 }
 
+.minting{
+    align-items: center;
+}
+
 .input{
     font-size: larger;
     text-align: center;
