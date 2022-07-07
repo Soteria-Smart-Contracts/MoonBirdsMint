@@ -35,9 +35,6 @@ h4{
     padding-top: 1vh;
     padding-bottom: 1vh;
     border-radius: 10px;
-    position: fixed;
-    bottom: 8vh;
-    left: 39vw;
     cursor: pointer;
 }
   
