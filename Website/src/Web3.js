@@ -52,9 +52,11 @@ async function mint(){
         console.log("Transaction failed");
         alert("Failed to mint");
         document.getElementById("txviewer").style.display = "none";
-        
+        let txfailed = true;
         return;
     });
+    if(txfailed){
+        return;
     document.getElementById("txviewer").textContent = "Transaction Complete";
     document.getElementById("txviewer").href = "https://blockscout.com/etc/mainnet/tx/" + tx.transactionHash;
     console.log(tx);
