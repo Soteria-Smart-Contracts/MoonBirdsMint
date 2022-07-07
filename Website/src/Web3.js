@@ -43,7 +43,7 @@ async function getID(){
 async function mint(){
     let amount = document.getElementById("amount").value;
     let txfailed = false;
-    document.getElementById("txviewer").textContent = "Awaiting Confirmation" + ;
+    document.getElementById("txviewer").innerHTML = 'Awaiting Blockchain confirmation <br><img src="src/images/spin.gif" id="spin" class="spingif"></img>';
     document.getElementById("txviewer").target = "_blank";
     document.getElementById("txviewer").href = "https://blockscout.com/etc/mainnet/tx/" + tx.transactionHash;
     if(amount < 1){ 
