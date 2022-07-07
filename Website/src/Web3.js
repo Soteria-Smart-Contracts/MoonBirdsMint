@@ -60,7 +60,11 @@ async function mint(){
         return;
     }
     document.getElementById("txviewer").textContent = "Transaction Complete";
-    do
+    document.getElementById("txviewer").style.display = "none";
+    getsupply();
+    await ReturnIds();
+    LoadNFTs();
+}
     document.getElementById("txviewer").target = "_blank";
     document.getElementById("txviewer").href = "https://blockscout.com/etc/mainnet/tx/" + tx.transactionHash;
     console.log(tx);
