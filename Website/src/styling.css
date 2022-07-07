@@ -38,7 +38,14 @@ h4{
 }
 
 //create a small loading icon to show when transaction is confirming
-
+.loading{
+    width: 20px;
+    height: 20px;
+    background-image: url("images/loading.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
   
 
 .display{
