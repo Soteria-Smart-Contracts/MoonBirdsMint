@@ -40,7 +40,10 @@ h4{
     width: fit-content;
     cursor: pointer;
 }
-  
+
+.txviewer:hover{
+    
+}
 
 .display{
     margin-top: 25vh;
