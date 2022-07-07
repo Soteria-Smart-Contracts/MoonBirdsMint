@@ -44,7 +44,7 @@ async function mint(){
     let amount = document.getElementById("amount").value;
     let txfailed = false;
     document.getElementById("txviewer").innerHTML = 'Awaiting Blockchain confirmation <br><img src="src/images/spin.gif" id="spin" class="spingif"></img>';
-    document.getElementById("txviewer").target = "";
+    document.getElementById("txviewer").target = "none";
     document.getElementById("txviewer").href = "";
     if(amount < 1){ 
         alert("Please enter a valid amount");
