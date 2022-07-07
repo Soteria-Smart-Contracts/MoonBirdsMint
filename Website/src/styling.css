@@ -120,7 +120,7 @@ h3{
     font-family: Arial;
     font-weight: bolder;
     width: 8vw;
-    transition: all .5s  ;
+    transition: all .5s  ease-in-out;
 }
 
 .smallbutton.mint:hover{
