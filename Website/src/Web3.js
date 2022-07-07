@@ -53,7 +53,7 @@ async function mint(){
     document.getElementById("txviewer").href = "https://blockscout.com/etc/mainnet/tx/" + tx.transactionHash;
     if(tx.status == false){
         document.getElementById("txviewer").textContent = "Transaction Failed";
-        document.getElementById("txviewer").href = "https://blockscout.com/etc/mainnet/tx/" + tx.transactionHash;
+        document.getElementById("txviewer").href = "";
     }
     console.log(tx);
     return(tx);
