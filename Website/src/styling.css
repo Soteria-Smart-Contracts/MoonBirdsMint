@@ -122,6 +122,10 @@ h3{
     width: 8vw;
 }
 
+.smallbutton.mint:hover{
+    background-color: #00b00;
+}
+
 .smallbutton.wallet{
     font-weight: bold;
     background-color: #15154c;
