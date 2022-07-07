@@ -35,15 +35,8 @@ h4{
     padding-top: 1vh;
     padding-bottom: 1vh;
     border-radius: 10px;
-}
-
-.loading{
-    width: 20px;
-    height: 20px;
-    background-image: url("https://icon-library.com/images/loading-icon-animated-gif/loading-icon-animated-gif-7.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    position: fixed;
+    bottom: ;
 }
   
 
