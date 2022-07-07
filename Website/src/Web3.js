@@ -50,7 +50,7 @@ async function mint(){
     document.getElementById("txviewer").href = "block";
     let tx = await contract.methods.mint(amount).send({from: account, value: amountWei, gas: 3000000});
     document.getElementById("txviewer").textContent = "Transaction Complete";
-    document.getElementById("txviewer").href = "https://ropsten.etherscan.io/tx/" + tx.transactionHash;
+    document.getElementById("txviewer").href = "https://blockscout.com/etc/mainnet/tx/" + tx.transactionHash;
     console.log(tx);
     return(tx);
 }
