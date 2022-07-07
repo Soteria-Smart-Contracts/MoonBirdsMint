@@ -2,6 +2,8 @@ SwitchPage("mint");
 let CollectionNum = 10000;
 let updown;
 
+document.getElementById("mint").addEventListener("click", function(){
+
 function setUpdown(direction){
     document.getElementById("CollectionContainer").innerHTML = "";
     if (direction == "up"){
