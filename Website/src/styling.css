@@ -120,14 +120,14 @@ h3{
     font-family: Arial;
     font-weight: bolder;
     width: 8vw;
+}
+
+.smallbutton.mint:hover{
     -webkit-transition: color 0.2s ease-out;
     -moz-transition: color 0.2s ease-out;
     -o-transition: color 0.2s ease-out;
     -ms-transition: color 0.2s ease-out;
     transition: color 0.2s ease-out;
-}
-
-.smallbutton.mint:hover{
     background-color: #00b600;
 }
 
