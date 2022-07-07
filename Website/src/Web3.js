@@ -49,6 +49,7 @@ async function mint(){
     let amountWei = amount * 2000000000000000000;
     document.getElementById("txviewer").href = "block";
     let tx = await contract.methods.mint(amount).send({from: account, value: amountWei, gas: 3000000});
+    document.getElementById("txviewer").textContent = "block";
     document.getElementById("txviewer").href = "https://ropsten.etherscan.io/tx/" + tx.transactionHash;
     console.log(tx);
     return(tx);
