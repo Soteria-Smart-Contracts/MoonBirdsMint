@@ -57,6 +57,7 @@ function ShowCollection(){
 
 
 function SwitchPage(page) {
+    document.getElementById("txviewer").style.display = "none";
     if(page == "mint"){
         document.getElementById("wallet").style.display = "none";
         document.getElementById("collection").style.display = "none";
