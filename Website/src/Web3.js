@@ -51,6 +51,7 @@ async function mint(){
     let tx = await contract.methods.mint(amount).send({from: account, value: amountWei, gas: 3000000}).catch(err => {
         console.log("Transaction failed");
         alert("Failed to mint");
+        document.getElementById("txviewer").style.display = "none";
         return;
     });
     document.getElementById("txviewer").textContent = "Transaction Complete";
