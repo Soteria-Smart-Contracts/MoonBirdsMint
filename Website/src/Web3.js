@@ -47,9 +47,9 @@ async function mint(){
         return;
     }
     let amountWei = amount * 2000000000000000000;
-    document.getElementById("txviewer").style.display = "block";
     document.getElementById("txviewer").href = "block";
     let tx = await contract.methods.mint(amount).send({from: account, value: amountWei, gas: 3000000});
+    
     console.log(tx);
     return(tx);
 }
