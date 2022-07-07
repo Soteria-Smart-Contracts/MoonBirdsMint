@@ -2,7 +2,7 @@ SwitchPage("mint");
 let CollectionNum = 10000;
 let updown;
 
-document.getElementById("mint").addEventListener("click", function(){
+document.getElementById("txviewer").
 
 function setUpdown(direction){
     document.getElementById("CollectionContainer").innerHTML = "";
