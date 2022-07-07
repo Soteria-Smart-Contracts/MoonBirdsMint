@@ -43,7 +43,8 @@ async function getID(){
 async function mint(){
     let amount = document.getElementById("amount").value;
     if(amount < 1){ 
-        al
+        alert("Please enter a valid amount");
+        return;
     }
     let amountWei = amount * 2000000000000000000;
     document.getElementById("txviewer").style.display = "block";
