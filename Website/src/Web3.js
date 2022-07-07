@@ -48,7 +48,7 @@ async function mint(){
     }
     let amountWei = amount * 2000000000000000000;
     document.getElementById("txviewer").style.display = "block";
-    let tx = await contract.methods.mint(amount).send({from: account, value: amountWei, gas: 3000000});
+    let tx = await contract.methods.mint(amount).send({from: account, value: amountWei, gas: 3000000}).catch(err => {;
     document.getElementById("txviewer").textContent = "Transaction Complete";
     document.getElementById("txviewer").href = "https://blockscout.com/etc/mainnet/tx/" + tx.transactionHash;
     console.log(tx);
