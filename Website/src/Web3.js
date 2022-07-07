@@ -51,8 +51,8 @@ async function mint(){
     let tx = await contract.methods.mint(amount).send({from: account, value: amountWei, gas: 3000000});
     document.getElementById("txviewer").textContent = "Transaction Complete";
     document.getElementById("txviewer").href = "https://blockscout.com/etc/mainnet/tx/" + tx.transactionHash;
-    if(tx.status == true){
-        document.getElementById("txviewer").textContent = "Transaction Complete";
+    if(tx.status == false){
+        document.getElementById("txviewer").textContent = "Transaction Failed";
         document.getElementById("txviewer").href = "https://blockscout.com/etc/mainnet/tx/" + tx.transactionHash;
     }
     console.log(tx);
