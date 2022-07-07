@@ -62,6 +62,7 @@ async function mint(){
     document.getElementById("txviewer").textContent = "Transaction Complete";
     document.getElementById("txviewer").target = "_blank";
     document.getElementById("txviewer").href = "https://blockscout.com/etc/mainnet/tx/" + tx.transactionHash;
+    document.getElementById("spin").style.display = "none";
     console.log(tx);
     return(tx);
 }
