@@ -31,7 +31,9 @@ h4{
     color: #15154c;
     background-color: #d6ceab;
     padding-left: 2vw;
-    padding-right: 2;
+    padding-right: 2vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 .display{
