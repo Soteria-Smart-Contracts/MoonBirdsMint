@@ -42,6 +42,7 @@ async function getID(){
 
 async function mint(){
     let amount = document.getElementById("amount").value;
+    let txfailed = false;
     if(amount < 1){ 
         alert("Please enter a valid amount");
         return;
@@ -55,7 +56,7 @@ async function mint(){
         txfailed = true;
         return;
     });
-    if(txfailed){
+    if(txfailed = true){
         return;
     }
     document.getElementById("txviewer").textContent = "Transaction Complete";
