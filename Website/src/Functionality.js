@@ -79,7 +79,8 @@ function SwitchPage(page) {
 }
 
 function GetRank(id){
-    let inde
+    let index = 1;
+    while(index )
 }
 
 
