@@ -78,15 +78,8 @@ function SwitchPage(page) {
 
 }
 
-function GetRankings() {
-    let index = 0;
-    while(index < ids.length){
-        id = ids[index];
-        rank = rankings[id];
-        window.rankingorder.push(rank);
-        index++;
-    }
-    window.rankingorder.sort(function(a, b){return a-b});
+function GetRank(id){
+    let inde
 }
 
 
