@@ -9999,3 +9999,5 @@ window.rankingorder = [9992,
     168,
     1179
     ]
+
+window.rankings
