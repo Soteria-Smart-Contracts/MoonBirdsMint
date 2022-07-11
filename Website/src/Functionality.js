@@ -25,7 +25,7 @@ function ShowCollection(){
             if (index < 1 || index > 10000){
                 break;
             }
-            let indexid = window.rankingorder[index + 1];
+            let indexid = window.rankingorder[index - 1];
             newcard = document.createElement("div");
             newcard.className = "NFTcard";
             newcard.id = indexid;
