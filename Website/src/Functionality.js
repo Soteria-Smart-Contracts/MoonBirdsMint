@@ -81,7 +81,7 @@ function SwitchPage(page) {
 function GetRank(id){
     let index = 1;
     while(index < 10000){
-        if (rankins[index] == id){
+        if (rankings[index] == id){
             return index;
         }
         index++;
