@@ -94,7 +94,7 @@ function LoadNFTs() {
     while(index < ids.length){
         newcard = document.createElement("div");
         id = ids[index];
-        rank = rankings[id];
+        rank = GetRank(id);
         newcard.className = "NFTcard";
         newcard.id = index;
         let img = '<img class="nftimage" src="src/images/collection/' + id + '.png"></img>"';
