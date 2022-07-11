@@ -80,7 +80,9 @@ function SwitchPage(page) {
 
 function GetRank(id){
     let index = 1;
-    while(index < 10000)
+    while(index < 10000){
+        
+    }
 }
 
 
