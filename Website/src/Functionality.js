@@ -21,7 +21,7 @@ function ShowCollection(){
     let index = CollectionNum;
 
     if (updown == "down"){
-        index = CollectionNum
+        index = CollectionNum - 1;
         while(index > (CollectionNum - 100)){
             if (index < 1 || index > 10000){
                 break;
