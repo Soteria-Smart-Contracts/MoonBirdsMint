@@ -79,7 +79,7 @@ function SwitchPage(page) {
 }
 
 function GetRank(id){
-    let index = 1;
+    let index = 0;
     while(index < 10000){
         if (rankingorder[index] == id){
             return index;
